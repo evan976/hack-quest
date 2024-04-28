@@ -9,8 +9,10 @@ import { IconFlight } from '@/components/icons/flight'
 import { Button } from '@/components/ui/button'
 import { HoverCard1, HoverCard2, HoverCard3 } from '@/components/ui/hover-card'
 import { Tag } from '@/components/ui/tag'
+import { useMediaQuery } from '@/hooks/use-media-query'
 
 export default function TrendingNow() {
+  const isLargeScreen = useMediaQuery('(min-width: 1280px)')
   return (
     <div className="w-full">
       <h1 className="text-xl font-next-poster font-bold text-text-100">{'< / Trending Now >'}</h1>
@@ -18,8 +20,8 @@ export default function TrendingNow() {
         modules={[Navigation]}
         navigation={true}
         spaceBetween={52}
-        slidesPerView={3}
-        className="mt-8"
+        slidesPerView={isLargeScreen ? 3 : 1}
+        className="xl:mt-8 mt-4"
       >
         <SwiperSlide className="py-1.5">
           <HoverCard3>
@@ -48,7 +50,7 @@ export default function TrendingNow() {
           </HoverCard3>
         </SwiperSlide>
         <SwiperSlide className="py-1.5">
-          <HoverCard1 className="pr-10">
+          <HoverCard1 className="xl:pr-10 pr-4">
             <h1 className="text-base font-bold text-text-100">Moonshot 2023 Summer Hackathon</h1>
             <div className="flex items-center gap-3">
               {['All Tracks', 'Solidity', 'ZK'].map((item, index) => (
@@ -57,7 +59,7 @@ export default function TrendingNow() {
                 </Tag>
               ))}
             </div>
-            <div className="flex items-center mt-10 pb-1 justify-between border-b border-b-divider">
+            <div className="flex items-center xl:mt-10 mt-4 pb-1 justify-between border-b border-b-divider">
               <span className="text-xs text-text-500">Signup</span>
               <span className="text-sm font-neue-machina">4/15 - 6/15</span>
             </div>

@@ -21,7 +21,7 @@
 }
 
 .swiper-button-next, .swiper-button-prev {
-  @apply !w-12 !h-12 z-20 flex items-center justify-center rounded-full border border-text-500;
+  @apply xl:!w-12 xl:!h-12 !w-6 !h-6 z-20 flex items-center justify-center rounded-full border border-text-500;
 }
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
@@ -34,7 +34,7 @@
 }
 
 .swiper-button-prev:after, .swiper-button-next:after {
-  @apply !text-base text-text-100 font-bold;
+  @apply xl:!text-base !text-xs text-text-100 font-bold;
 }
 
 .swiper-button-prev, .swiper-rtl .swiper-button-next {

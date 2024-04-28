@@ -9,7 +9,7 @@ export const Button = React.forwardRef<
   <button
     ref={ref}
     className={cn(
-      'flex items-center justify-center bg-tag text-green-yellow rounded-[40px] px-4 py-2',
+      'flex items-center justify-center bg-tag text-green-yellow rounded-[40px] px-1 xl:px-4 xl:py-2 py-1',
       className,
     )}
     {...props}

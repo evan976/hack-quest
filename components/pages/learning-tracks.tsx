@@ -7,9 +7,9 @@ import { Tag } from '@/components/ui/tag'
 
 export default function LearningTracks() {
   return (
-    <div className="mt-10 max-w-[1360px] mx-auto">
+    <div className="mt-10">
       <h1 className="text-xl font-next-poster font-bold text-text-100">{'< / Learning Tracks >'}</h1>
-      <div className="grid grid-cols-3 gap-12 mt-6">
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-12 mt-6">
         <HoverCard2 className="pb-7 pr-3.5">
           <div className="w-12 h-1 rounded-full bg-gradient-to-b from-lime-400 to-green-500" />
           <h1 className="text-base font-bold text-text-100 mt-6">Web 3.0 Programming Advanced</h1>

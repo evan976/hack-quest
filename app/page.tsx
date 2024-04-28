@@ -4,7 +4,7 @@ import TrendingNow from '@/components/pages/trending-now'
 
 export default function Page() {
   return (
-    <section className="mt-12">
+    <section className="xl:mt-12 mt-4 px-4 xl:px-0">
       <TrendingNow />
       <LearningTracks />
       <Syntax />

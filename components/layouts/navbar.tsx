@@ -4,10 +4,10 @@ import Logo from '@/public/logo.svg'
 
 export function Navbar() {
   return (
-    <header className="w-full flex h-[76px] max-w-[1360px] mx-auto justify-between items-center">
+    <header className="w-full px-4 xl:px-0 flex h-16 xl:h-[76px] justify-between items-center">
       <div className="flex h-full items-center gap-16">
         <Logo className="w-32 h-4" />
-        <nav>
+        <nav className="hidden xl:block">
           <ul className="flex items-center gap-10 text-text-400">
             {['All Courses', 'Learning Dashboard'].map((item, index) => (
               <li key={index} className="text-sm">{item}</li>

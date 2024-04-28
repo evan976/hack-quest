@@ -8,13 +8,13 @@ import { Tag } from '@/components/ui/tag'
 export default function Syntax() {
   return (
     <div className="mt-10 max-w-[1360px] mx-auto">
-      <ul className="text-base border-y border-y-divider py-6 flex items-center gap-20 text-text-100">
+      <ul className="xl:text-base text-sm border-y border-y-divider xl:py-6 py-3 flex items-center gap-4 xl:gap-20 text-text-100">
         <li className="font-bold font-next-poster">{'< / Syntax >'}</li>
         {['Guided Project', 'Concept Learning', 'Teaser'].map((item, index) => (
           <li key={index} className="font-extralight font-next-poster ">{item}</li>
         ))}
       </ul>
-      <div className="grid grid-cols-3 gap-12 mt-10">
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-12 mt-10">
         <HoverCard3>
           <div className="w-12 h-1 rounded-full bg-gradient-to-b from-teal-400 to-sky-500" />
           <h1 className="text-base font-bold text-text-100 mt-6">Introduction to programming</h1>

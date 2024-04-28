@@ -18,7 +18,7 @@ export function HoverCard1({
       <GradientPulple className="w-full h-full scale-[0.99]" />
       <div className="absolute top-0 left-0 w-full h-full hover:translate-x-1.5 hover:-translate-y-1.5 transition duration-300">
         <Card1 className="w-full h-full" />
-        <div className={cn('w-full h-full pl-10 absolute top-0 left-0 pr-4 py-8', className)}>
+        <div className={cn('w-full h-full pl-4 xl:pl-10 absolute top-0 left-0 pr-4 py-8', className)}>
           {children}
         </div>
       </div>
@@ -38,7 +38,7 @@ export function HoverCard2({
       <GradientGreen className="w-full h-full scale-[0.99]" />
       <div className="absolute top-0 left-0 w-full h-full hover:translate-x-1.5 hover:-translate-y-1.5 transition duration-300">
         <Card2 className="w-full h-full" />
-        <div className={cn('w-full h-full pl-10 absolute top-0 left-0 pr-4 py-8', className)}>
+        <div className={cn('w-full h-full pl-4 xl:pl-10 absolute top-0 left-0 pr-4 py-8', className)}>
           {children}
         </div>
       </div>
@@ -58,7 +58,7 @@ export function HoverCard3({
       <GradientSyntax className="w-full h-full scale-[0.99]" />
       <div className="absolute top-0 left-0 w-full h-full hover:translate-x-1.5 hover:-translate-y-1.5 transition duration-300">
         <Card3 className="w-full h-full" />
-        <div className={cn('w-full h-full pl-10 absolute top-0 left-0 pr-4 py-8', className)}>
+        <div className={cn('w-full h-full pl-4 xl:pl-10 absolute top-0 left-0 pr-4 py-8', className)}>
           {children}
         </div>
       </div>
